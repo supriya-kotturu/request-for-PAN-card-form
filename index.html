@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PAN card request</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-</body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="table-wrapper">
+      <table>
+        <tr class="header">
+          <td colspan="2" >
+            <h1>
+              Request for New PAN Card Or/And Changes or Correction in PAN Data
+            </h1>
+            <p>
+              <i
+                >Fields marked with <i class="astrisk">*</i>(astrisk) are
+                mandatroy. To avoid mistake(s), please refer guidelines and
+                instrustions</i
+              >
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <p>
+              <i class="astrisk">*</i> Whether citizen of India
+              <span>
+                <input
+                  type="radio"
+                  name="isIndianCitizen"
+                  id="isIndianCitizen"
+                /><label for="isIndianCitizen"><span>Yes</span></label>
+                <input
+                  type="radio"
+                  name="isIndianCitizen"
+                  id="isNotIndianCitizen"
+                /><label for="isNotIndianCitizen"><span>No</span></label>
+              </span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <p>
+              <i class="astrisk">*</i> Permanent Account Number(PAN)
+              <input type="text" name="pan-number" />
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="name" /></td>
+          <td>
+            <p><i class="astrisk">*</i> 1. Name</p>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <p>
+              Title &nbsp;<input type="radio" name="title" id="mr" /><label for="mr"
+                >Shri/Mr</label
+              >&nbsp; 
+              <input type="radio" name="title" id="mrs" /><label
+                for="mrs"
+                >Smt/Mrs</label
+              >
+              &nbsp; <input type="radio" name="title" id="ms" /><label for="ms"
+                >Kumari/Ms</label
+              >&nbsp;
+            </p>
+          </td>
+        </tr>
+      </table>
+      <caption>
+        <p>PAN card details</p>
+      </caption>
+    </div>
+  </body>
 </html>

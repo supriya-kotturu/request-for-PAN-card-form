@@ -3,7 +3,6 @@
 :root {
   --body-text: "Poppins", sans-serif;
   font-size: 16px;
-  font-weight: 300;
 }
 
 body,
@@ -14,4 +13,30 @@ html,
   border: 0;
   box-sizing: border-box;
   font-family: var(--body-text);
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+.header {
+  background-color: brown;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+}
+
+.astrisk {
+  color: red;
+}
+
+input {
+  border: 1px solid black;
 }
